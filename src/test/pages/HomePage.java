@@ -1,4 +1,6 @@
-package Pages;
+package src.test.pages;
+
+import org.openqa.selenium.By;
 
 public class HomePage extends BasePage {
     public String url = "https://automationexercise.com/";

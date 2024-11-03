@@ -1,6 +1,9 @@
-package Pages;
+package src.test.pages;
 
-public class LoginPage {
+import org.openqa.selenium.By;
+import src.test.utilities.DriverSetup;
+
+public class LoginPage extends BasePage {
     public By email_input_box= By.xpath("//input[@name='email']");
     public By password_input_box= By.xpath("//input[@name='password']");
     public By login_button= By.xpath("//button[@type='submit']");
@@ -11,4 +14,7 @@ public class LoginPage {
         homePage.loadHomePage();
         homePage.clickOnElement(homePage.login_signup);
     }
+
+
+
 }

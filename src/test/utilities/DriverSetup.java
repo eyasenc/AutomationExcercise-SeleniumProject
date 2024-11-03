@@ -1,4 +1,4 @@
-package Utilities;
+package src.test.utilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

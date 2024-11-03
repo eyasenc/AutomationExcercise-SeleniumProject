@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/eyase/Desktop/automation project learning/AutomationExcercise">
+        <classes>
+            <class name="src.test.testcases.TestHomePage">
+                <methods>
+                    <include name="testHomePageUrl"/>
+                    <include name="testHomePageTitle"/>
+                </methods>
+            </class>
+            <class name="src.test.testcases.TestLogin">
+                <methods>
+                    <include name="testLoginWithValidCredentials"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
