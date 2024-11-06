@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" parallel="classes" thread-count="3">
     <test verbose="2" preserve-order="true"
-          name="C:/Users/eyase/Desktop/automation project learning/AutomationExcercise">
+          name="C:/Users/eyase/Desktop/automation project learning/AutomationExercise">
         <classes>
             <class name="src.test.testcases.TestHomePage">
                 <methods>
@@ -13,6 +13,11 @@
             <class name="src.test.testcases.TestLogin">
                 <methods>
                     <include name="testLoginWithValidCredentials"/>
+                    <include name="testLoginWithInvalidPassword"/>
+                    <include name="testLoginWithInvalidEmailAndPassword"/>
+                    <include name="testLoginWithInvalidEmailAndValidPassword"/>
+                    <include name="testLoginWithoutEmailAndPassword"/>
+                    <include name="testLoginEmailAndWithoutPassword"/>
                 </methods>
             </class>
         </classes>
